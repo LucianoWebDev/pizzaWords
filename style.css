@@ -1,0 +1,120 @@
+body {
+    font-family: 'Quicksand', sans-serif;
+    margin: 0px;
+}
+
+/*! - - - Flexbox Stuff - - - */
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 85vh;
+    width: 90vw;
+    background-color: green;
+}
+
+.top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50%;
+    width: 100%;
+    text-align: center;
+}
+
+.bottom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50%;
+    width: 100%;
+}
+
+.footer {
+    display: flex;
+    flex-direction: row;
+    width: inherit;
+    justify-content: center;
+    align-items: center;
+}
+
+/*! - - - Legit Design Stuff - - - */
+
+.textInput {
+    width: 50vw;
+    height: 25vh;
+    font-size: 2rem;
+    text-align: left;
+}
+
+.title {
+    font-size: 5rem;
+    font-weight: bolder;
+    text-shadow: 2px 2px 0px blue, 4px 4px 0px red;
+    color: white;
+}
+
+.theText {
+    width: 80%;
+    height: 80%;
+}
+
+#result {
+    font-size: 2.6rem;
+    word-wrap: break-word;
+}
+
+.footer {
+    padding-bottom: 10px;
+    font-size: 1.2rem;
+    text-shadow: 2px 2px 0px blue, 4px 4px 0px red;
+    color: white;
+}
+
+a {
+    color: black;
+    font-size: 2rem;
+    padding: 0px 80px;
+    text-shadow: none;
+}
+
+/*! - - - Media Queries - - - */
+
+@media (max-device-width: 1025px) {
+    .box {
+        width: 90vw;
+        height: 90vh;
+        box-shadow: 12px 12px 0px black;
+        border-right: 1px solid white;
+        border-bottom: 1px solid white;
+    }
+
+    .title {
+        font-size: 2.4rem;
+        word-wrap: break-word;
+    }
+
+    .textInput {
+        width: 90%;
+        font-size: 1.9rem;
+    }
+
+    #result {
+        font-size: 1.3rem;
+    }
+}
+@media (min-device-width: 1025px) and (orientation: landscape) {
+    .box {
+        box-shadow: 25px 25px 0px black;
+        border-right: 1px solid white;
+        border-bottom: 1px solid white;
+    }
+}
