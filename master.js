@@ -9,7 +9,7 @@ x.addEventListener('input', function () {
     xx = arr.map((n) =>
         n.length === 5 || /pizza/i.test(n)
             ? '🍕'
-            : /hawai/gi.test(n)
+            : /hawai/gi.test(n) | /pineappl/gi.test(n) | /anana/gi.test(n)
             ? (alert('Are you Crazy??'),
               (x.value = ''),
               (output.innerHTML = ''))
